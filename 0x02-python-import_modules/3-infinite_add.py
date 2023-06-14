@@ -4,7 +4,7 @@ def add_arg(argv):
     length = len(argv)
     if length > 1:
         for i in range(1,argv):
-            sum += argv[i]
+            sum += int(argv[i])
     print("{:d}".format(sum))
 
 if __name__ == "__main__":
