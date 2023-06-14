@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+def print_arg(argv):
+    length = len(argv)
+    if length == 1:
+        print("{:d} argument:".format(length))
+    elif length == 0:
+        print("{:d} arguments.".format(length))
+    else:
+        print("{:d} arguments:".format(length))
+    
+    if length > 0:
+        for i in range(length):
+            print("{:d}: {:s}".format(i+1, argv[i]))
+if __name__ == "__main__":
+    import sys
+    print_arg(sys.argv)
