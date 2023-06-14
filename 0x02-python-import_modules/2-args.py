@@ -9,7 +9,7 @@ def print_arg(argv):
         print("{:d} arguments:".format(length))
     length += 1
     if length > 0:
-        for i in range(1,length):
+        for i in range(1, length):
             print("{:d}: {:s}".format(i, argv[i]))
 if __name__ == "__main__":
     import sys
