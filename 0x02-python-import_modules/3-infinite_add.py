@@ -3,7 +3,7 @@ def add_arg(argv):
     sum = 0
     length = len(argv)
     if length > 1:
-        for i in range(1,argv):
+        for i in range(1,length):
             sum += int(argv[i])
     print("{:d}".format(sum))
 
