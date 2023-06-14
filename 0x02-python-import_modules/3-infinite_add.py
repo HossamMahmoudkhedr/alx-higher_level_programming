@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import sys
+
 def add_arg(argv):
     sum = 0
     length = len(argv)
@@ -8,5 +10,4 @@ def add_arg(argv):
     print("{:d}".format(sum))
 
 if __name__ == "__main__":
-    import sys
     add_arg(sys.argv)
