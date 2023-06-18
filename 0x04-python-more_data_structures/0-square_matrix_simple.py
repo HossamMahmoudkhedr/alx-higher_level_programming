@@ -5,7 +5,7 @@ def square_matrix_simple(matrix=[]):
     for row in matrix:
         newMatrix.append([])
         for i in row:
-            newMatrix[l].append(i*i)
+            newMatrix[l].append(i * i)
         l += 1
     
     return newMatrix
