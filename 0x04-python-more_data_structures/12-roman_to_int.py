@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 def value(r):
-    if (r == 'I'):
+    if r == 'I':
         return 1
-    if (r == 'V'):
+    if r == 'V':
         return 5
-    if (r == 'X'):
+    if r == 'X':
         return 10
-    if (r == 'L'):
+    if r == 'L':
         return 50
-    if (r == 'C'):
+    if r == 'C':
         return 100
-    if (r == 'D'):
+    if r == 'D':
         return 500
-    if (r == 'M'):
+    if r == 'M':
         return 1000
     return -1
 
@@ -20,12 +20,12 @@ def roman_to_int(roman_string):
     res = 0
     i = 0
     if type(roman_string) != str or roman_string == None:
-        return None
-    while (i < len(roman_string)):
+        return 0
+    while i < len(roman_string):
         s1 = value(roman_string[i])
-        if (i + 1 < len(roman_string)):
+        if i + 1 < len(roman_string):
             s2 = value(roman_string[i + 1])
-            if (s1 >= s2):
+            if s1 >= s2:
                 res = res + s1
                 i = i + 1
             else:
