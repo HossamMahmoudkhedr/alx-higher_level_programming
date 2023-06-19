@@ -20,7 +20,7 @@ def value(r):
 def roman_to_int(roman_string):
     res = 0
     i = 0
-    if type(roman_string) != str or roman_string == None:
+    if type(roman_string) != str or roman_string is None:
         return 0
     while i < len(roman_string):
         s1 = value(roman_string[i])
