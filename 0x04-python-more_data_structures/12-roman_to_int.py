@@ -19,6 +19,8 @@ def value(r):
 def roman_to_int(roman_string):
     res = 0
     i = 0
+    if type(roman_string) != str or roman_string == None:
+        return None
     while (i < len(roman_string)):
         s1 = value(roman_string[i])
         if (i + 1 < len(roman_string)):
