@@ -25,15 +25,10 @@ listint_t *insert_node(listint_t **head, int number)
                 prev = temp;
                 temp = temp->next;
             }
-        if (prev != temp)
-        {
-            prev->next = newNode;
-            newNode->next = temp;
-        }
-        else if (temp == prev)
+        if (prev == NULL)
         {
             *head = newNode;
-            newNode->next = temp->next;
+            newNode->next = temp;
         }
         else if (temp == NULL)
         {
