@@ -3,6 +3,6 @@ def uppercase(str):
     uppercaseStr = ""
     for letter in str:
         if ord(letter) >= 97 and ord(letter) <= 122:
-            letter =  chr(ord(letter) - ord('a') + ord('A'))
+            letter = chr(ord(letter) - ord('a') + ord('A'))
         uppercaseStr += letter
     print("{:s}".format(uppercaseStr))
