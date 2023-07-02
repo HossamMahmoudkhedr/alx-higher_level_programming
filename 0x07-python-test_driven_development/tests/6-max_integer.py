@@ -18,5 +18,5 @@ def max_integer(list=[]):
     return result
 
 
-list = ["a", "b", 'c', "A"]
+list = [4, 2, 5, 1, 23, 44]
 print(max_integer(list))
