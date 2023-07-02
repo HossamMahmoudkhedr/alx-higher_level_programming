@@ -18,6 +18,10 @@ class TestMaxFunction(unittest.TestCase):
     def test_characters_list(self):
         list = ["a", "b", 'c', "A"]
         self.assertEqual(max_integer(list), "c")
+    
+    def test_float_numbers(self):
+        list = [1.2, 4.5, 2.3, 1.8, -5.4]
+        self.assertEqual(max_integer(list), 4.5)
 
 if __name__ == "__main__":
     unittest.main()
