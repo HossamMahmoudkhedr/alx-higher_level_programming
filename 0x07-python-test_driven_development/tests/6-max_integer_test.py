@@ -23,5 +23,13 @@ class TestMaxFunction(unittest.TestCase):
         list = [1.2, 4.5, 2.3, 1.8, -5.4]
         self.assertEqual(max_integer(list), 4.5)
 
+    def test_int_float_numbers(self):
+        list = [4, 5.2, 5, 9, -2 ,1, 3.4, 2.2]
+        self.assertEqual(max_integer(list), 9)
+
+    def test_empty_list(self):
+        list = []
+        self.assertEqual(max_integer(list), None)
+
 if __name__ == "__main__":
     unittest.main()
