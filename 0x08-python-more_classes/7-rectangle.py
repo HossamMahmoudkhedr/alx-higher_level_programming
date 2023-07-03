@@ -54,18 +54,10 @@ class Rectangle:
         return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        if isinstance(self.print_symbol, list):
-            new_print_sympol = "["
-            for i in range(len(self.print_symbol)):
-                if i == len(self.print_symbol) - 1:
-                    new_print_sympol += "'{}']".format(self.print_symbol[i])    
-                else:
-                    new_print_sympol += "'{}', ".format(self.print_symbol[i])
-            self.print_symbol = new_print_sympol
         rectangle = ""
         if self.__width != 0 and self.__height != 0:
             for i in range(self.__height):
-                rectangle += self.print_symbol * self.__width + "\n"
+                rectangle += str(self.print_symbol) * self.__width + "\n"
         return rectangle
 
     def __repr__(self):
