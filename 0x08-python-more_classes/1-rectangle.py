@@ -3,7 +3,18 @@
 
 
 class Rectangle:
-    """Defines an rectangle class"""
+    """Defines an rectangle class
+    
+    Args:
+        width: the width of the rectangle
+        height: the height of the rectangle
+
+    Return:
+        returns the width and the height
+
+    Raise:
+        Raises a ValueError and TypeError
+    """
     
     def __init__(self, width=0, height=0):
         """Set a private instance attributes"""
