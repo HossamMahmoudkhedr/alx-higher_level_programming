@@ -9,8 +9,8 @@ class Rectangle:
         """Set a private instance attributes
         
         Args:
-        width: the width of the rectangle
-        height: the height of the rectangle
+            width (int): the width of the rectangle
+            height (int): the height of the rectangle
         """
         self.width = width
         self.height = height
