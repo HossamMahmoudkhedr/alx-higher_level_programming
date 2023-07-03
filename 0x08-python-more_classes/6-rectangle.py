@@ -7,16 +7,16 @@ class Rectangle:
 
 
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Set a private instance attributes
-
         Args:
             width (int): the width of the rectangle
             height (int): the height of the rectangle
         """
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
