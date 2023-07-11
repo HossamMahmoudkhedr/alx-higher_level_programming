@@ -9,7 +9,7 @@ def write_file(filename="", text=""):
     with open(filename, encoding="utf-8") as myFile:
         charCount = 0
         while True:
-            line = myFile.readline() 
+            line = myFile.readline()
             if not line :
                 return charCount
             for char in line:
