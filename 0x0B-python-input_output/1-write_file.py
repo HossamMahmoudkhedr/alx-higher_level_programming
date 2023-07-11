@@ -13,4 +13,5 @@ def write_file(filename="", text=""):
             if not line :
                 return charCount
             for char in line:
-                charCount += 1
+                if char:
+                    charCount += 1
