@@ -31,3 +31,9 @@ class Square(Rectangle):
             self.y = args [3]
         except IndexError:
             pass
+
+    def to_dictionary(self):
+        return {'id': getattr(self, "id"),
+                'x': getattr(self, "x"),
+                'size': getattr(self, "size"),
+                'y': getattr(self, "y")}
