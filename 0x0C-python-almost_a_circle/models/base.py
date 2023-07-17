@@ -53,3 +53,21 @@ class Base:
             r2 = Square(5)
         r2.update(**dictionary)
         return (r2)
+
+    @classmethod
+    def load_from_file(cls):
+        file_name = cls.__name__ + ".json"
+
+        try:
+            with open(file_name, encoding="UTF8") as fd:
+                content = cls.from_json_string(fd.read())
+        except:
+            return []
+
+        instances = []
+
+        for instance in content:
+            tmp = cls.create(**instance)
+            instances.append(tmp)
+
+        return instances
