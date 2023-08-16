@@ -2,4 +2,4 @@
 -- use hbtn_0d_usa database
 USE hbtn_0d_usa;
 -- Select the id and name from cities in ascending order
-SELECT id, name FROM cities ORDER BY id asc;
+SELECT id, name FROM cities ORDER BY id ASC;
