@@ -1,5 +1,9 @@
 -- Creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa)
+-- create hbtn_0d_usa database
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+-- use the hbtn_0d_usa database
+USE hbtn_0d_usa;
+-- create cities table
 CREATE TABLE IF NOT EXISTS cities(
 	id INT UNIQUE AUTO_INCREMENT NOT NULL,
     state_id INT NOT NULL,
