@@ -10,7 +10,7 @@ class Square extends FirstSquare {
 			}
 			square += '\n';
 		}
-		console.log(square);
+		console.log(square.trim());
 	}
 }
 
