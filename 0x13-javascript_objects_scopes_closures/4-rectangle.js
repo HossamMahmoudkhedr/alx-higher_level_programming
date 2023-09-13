@@ -15,7 +15,7 @@ class Rectangle {
 			}
 			rectangle += '\n';
 		}
-		console.log(rectangle);
+		console.log(rectangle.trim());
 	}
 
 	rotate () {
