@@ -18,7 +18,11 @@ if __name__ == '__main__':
                             user=argv[1], passwd=argv[2], db=argv[3])
     db_cursor = db_connect.cursor()
 
-    db_cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    db_cursor.execute("SELECT * \
+    FROM states \
+    WHERE CONVERT(`name` USING Latin1) \
+    COLLATE Latin1_General_CS \
+    LIKE 'N%';")
 
     rows_selected = db_cursor.fetchall()
 
