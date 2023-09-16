@@ -12,7 +12,7 @@ if __name__ == "__main__":
     Accessing the database on the localhost and execute the MySQL command
     """
     db_connect = MySQLdb.connect(
-        host="localhost", user=argv[1], port=3306, password=argv[2], db=argv[3])
+        host="localhost", user=argv[1], port=3306, passwrd=argv[2], db=argv[3])
 
     db_cursor = db_connect.cursor()
 
