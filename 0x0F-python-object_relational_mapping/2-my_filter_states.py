@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     db_cursor = db_connect.cursor()
 
-    db_cursor.execute('SELECT * FROM states WHERE name={}', format(argv[4]))
+    db_cursor.execute("SELECT * FROM states WHERE name like '{}'", format(argv[4]))
 
     states = db_cursor.fetchall()
 
