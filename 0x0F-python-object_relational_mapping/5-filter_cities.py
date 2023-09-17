@@ -19,4 +19,4 @@ if __name__ == "__main__":
 
     cities = db_cursor.fetchall()
 
-    print(', '.join([cities[1] for city in cities]))
+    print(', '.join([city[1] for city in cities]))
