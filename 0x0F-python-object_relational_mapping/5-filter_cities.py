@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     db_cursor = db_connect.cursor()
 
-    db_cursor.execute("SELECT cities.name \
+    db_cursor.execute("SELECT cities.id, cities.name, states.name \
                       FROM cities JOIN states ON cities.state_id = states.id \
                       WHERE states.name = '{}';".format(argv[4]))
 
