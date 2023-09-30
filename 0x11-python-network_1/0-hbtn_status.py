@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""script that fetches https://alx-intranet.hbtn.io/status"""
+"""A script that
+fetches https://intranet.hbtn.io/status.
+"""
 
 
 if __name__ == '__main__':
