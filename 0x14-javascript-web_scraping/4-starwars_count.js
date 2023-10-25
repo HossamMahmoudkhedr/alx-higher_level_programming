@@ -3,21 +3,19 @@
 
 const request = require('request');
 const FILMS_URL = process.argv[2];
-const PEOPLE_URL = '';
+const count = 0;
 request(FILMS_URL, (error, body, response) => {
 	if (error) {
 		console.log(error);
 	} else {
-		PEOPLE_URL = JSON.parse(body).characters[17];
+		const results = JSON.parse(body).results;
+		results.map((item) => {
+			for (let i = 0; i < item.characters.length; i++) {
+				if (item.characters[i].endsWith('18/')) {
+					count += 1;
+				}
+			}
+		});
+		console.log(count);
 	}
 });
-
-if (PEOPLE_URL) {
-	request(PEOPLE_URL, (error, body, response) => {
-		if (error) {
-			console.log(error);
-		} else {
-			console.log(JSON.parse(body).films.length);
-		}
-	});
-}
